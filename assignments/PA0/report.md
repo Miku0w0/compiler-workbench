@@ -1,13 +1,13 @@
 # 实验报告
 
 ## 课程：编译原理
-姓名：李锦源  为什么不会显示更改？
+姓名：李锦源 
 学号：20238131022
 数据结构：`Stack` 
 日期：2025年9月27日 星期六 13:31:21  
 
 **GitHub 仓库链接：**  
-[https://github.com/awa-Orz-Ljy/1coolc.git](https://github.com/awa-Orz-Ljy/1coolc)
+[https://github.com/Miku0w0/compiler-workbench.git](https://github.com/Miku0w0/compiler-workbench)
 
 ---
 
