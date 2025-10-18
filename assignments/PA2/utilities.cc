@@ -213,6 +213,8 @@ void dump_cool_token(ostream& out, int lineno, int token, YYSTYPE yylval)
 //
 // Decstations don't have strdup in the library.
 //
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wnonnull"
 char *strdup(const char *s)
 {
   char *news;
@@ -223,6 +225,7 @@ char *strdup(const char *s)
   strcpy(news, s);
   return(news);
 }
+#pragma GCC diagnostic pop
 
 ///////////////////////////////////////////////////////////////////////////
 //

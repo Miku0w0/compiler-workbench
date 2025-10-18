@@ -88,9 +88,9 @@ class Main {
                         cells.evolve();
                         cells.print();
                         countdown <- countdown - 1;
-                    
+                    }(*加了个 *)
                 pool
-            );  (* end let countdown
+            );  (* end let countdown 这里是第一次报错 *)
             self;
         }
     };
