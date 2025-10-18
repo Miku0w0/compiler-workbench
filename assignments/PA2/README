@@ -106,3 +106,25 @@ Instructions
 Write-up for PA2
 ----------------
 
+1. Design decisions:
+   I implemented the COOL lexer using flex by defining tokens for keywords,
+   identifiers, integers, strings, operators, and comments. I used start conditions
+   to handle multi-line comments and string escapes properly. I also ensured
+   that errors such as unterminated strings and invalid characters are handled
+   gracefully.
+
+2. Correctness:
+   The lexer correctly identifies all COOL tokens and distinguishes between
+   keywords and identifiers using case-sensitive matching. It returns tokens
+   in the correct order and associates each with its line number for later
+   compiler stages. I verified correctness by comparing outputs with the
+   reference lexer.
+
+3. Test coverage:
+   I wrote an extended version of test.cl that covers all token types:
+   - keywords, class names, and identifiers
+   - integers and string literals (including escaped characters)
+   - arithmetic and comparison operators
+   - nested and unterminated comments
+   - illegal characters and unclosed strings
+   The lexer output matches the expected token sequence for all cases.
